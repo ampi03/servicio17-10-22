@@ -1,1 +1,12 @@
-<p>login works!</p>
+<form [formGroup]="datosUsuarios">
+    <span class="p-float-label">
+        <input id="float-input" type="text" pInputText FormControlName="nombre"> 
+        <label for="float-input">Nombre</label>
+    </span>
+    <span class="p-float-label">
+        <input id="float-input" type="password" pInputText FormControlName="contrasena" > 
+        <label for="float-input">Contraseña</label>
+    </span>
+    <button pButton class="boton" routerLink="/postres">Iniciar sesión</button>
+</form>
+

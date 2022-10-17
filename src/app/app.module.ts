@@ -12,7 +12,9 @@ import { LoginComponent } from './pages/login/login.component';
 import { environment } from 'src/environments/environment';
 import { MenubarModule } from 'primeng/menubar';
 import { AngularFireModule } from '@angular/fire/compat';
-
+import {InputTextModule} from 'primeng/inputtext';
+import { ReactiveFormsModule } from '@angular/forms';
+import {ButtonModule} from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,9 @@ import { AngularFireModule } from '@angular/fire/compat';
     AppRoutingModule,
     MenubarModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
+    InputTextModule,
+    ReactiveFormsModule,
+    ButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

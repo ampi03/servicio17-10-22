@@ -15,6 +15,8 @@ import { AngularFireModule } from '@angular/fire/compat';
 import {InputTextModule} from 'primeng/inputtext';
 import { ReactiveFormsModule } from '@angular/forms';
 import {ButtonModule} from 'primeng/button';
+import { LoginService } from './servicios/login.service';
+import { VigilanteGuard } from './vigilante.guard';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,7 @@ import {ButtonModule} from 'primeng/button';
     ReactiveFormsModule,
     ButtonModule,
   ],
-  providers: [],
+  providers: [LoginService, VigilanteGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

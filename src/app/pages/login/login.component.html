@@ -1,12 +1,16 @@
+
+<h1 style="margin-left: 20px;">Login</h1>
+
 <form [formGroup]="datosUsuarios">
-    <span class="p-float-label">
-        <input id="float-input" type="text" pInputText FormControlName="nombre"> 
+    <span class="p-float-label" style="margin: 20px;">
+        <input id="float-input" type="text" pInputText formControlName="nombre"> 
         <label for="float-input">Nombre</label>
     </span>
-    <span class="p-float-label">
-        <input id="float-input" type="password" pInputText FormControlName="contrasena" > 
+
+    <span class="p-float-label" style="margin: 20px; margin-top: 10px;">
+        <input id="float-input" type="password" pInputText formControlName="contrasena" > 
         <label for="float-input">Contraseña</label>
     </span>
-    <button pButton class="boton" routerLink="/postres">Iniciar sesión</button>
+    <button pButton class="boton" style="margin:20px; background-color: pink;" (click)="inicioSesion()">Iniciar sesión</button>
 </form>
 
